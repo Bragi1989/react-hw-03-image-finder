@@ -48,6 +48,11 @@ class App extends Component {
 
       const newImages = response.data.hits;
 
+      if (newImages.length === 0) {
+        console.log('No images found for the given query.');
+        return;
+      }
+
       this.setState((prevState) => ({
         images: [...prevState.images, ...newImages],
       }));
