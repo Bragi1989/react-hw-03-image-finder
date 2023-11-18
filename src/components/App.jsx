@@ -87,7 +87,7 @@ handleSearchSubmit = (newQuery) => {
   };
 
   render() {
-    const { query, images, isLoading, modalImage, visibleCount } = this.state;
+    const { images, isLoading, modalImage, visibleCount } = this.state;
 
     return (
       <div className={css.container}>
