@@ -57,10 +57,9 @@ class App extends Component {
     }
   };
 
- handleSearchSubmit = (newQuery) => {
-  const { query } = this.state;
+handleSearchSubmit = (newQuery) => {
 
-  if (newQuery !== query) {
+  if (newQuery !== this.state.query) {
     this.setState({
       query: newQuery,
       page: 1,
@@ -68,7 +67,7 @@ class App extends Component {
       visibleCount: 12,
     });
   }
-  };
+};
   
 
   handleLoadMore = () => {
