@@ -42,4 +42,6 @@ Modal.propTypes = {
   imageUrl: PropTypes.string.isRequired,
 };
 
+
+
 export default Modal;
