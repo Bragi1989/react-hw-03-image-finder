@@ -68,7 +68,8 @@ class App extends Component {
       visibleCount: 12,
     });
   }
-};
+  };
+  
 
   handleLoadMore = () => {
     this.setState((prevState) => ({
