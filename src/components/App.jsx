@@ -58,7 +58,10 @@ class App extends Component {
   };
 
 handleSearchSubmit = (newQuery) => {
-  if (newQuery !== this.state.query) {
+  // eslint-disable-next-line no-unused-vars
+  const { query } = this.state;
+
+  if (newQuery !== query) {
     this.setState({
       query: newQuery,
       page: 1,
