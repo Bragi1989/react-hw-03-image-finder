@@ -20,14 +20,6 @@ class App extends Component {
       visibleCount: 12,
     };
   }
-
-  componentDidMount() {
-    const { query, page } = this.state;
-    if (query) {
-      this.fetchImages(query, page);
-    }
-  }
-
   
 
   componentDidUpdate(prevProps, prevState) {
