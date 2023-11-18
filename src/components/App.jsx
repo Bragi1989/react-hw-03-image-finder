@@ -22,7 +22,7 @@ class App extends Component {
   }
   
 
-  componentDidUpdate(prevProps, prevState) { a
+  componentDidUpdate(prevProps, prevState) { 
     const { query, page } = this.state;
 
     if (query !== prevState.query || page !== prevState.page) {
@@ -57,18 +57,18 @@ class App extends Component {
     }
   };
 
-  handleSearchSubmit = (newQuery) => {
-    const { query } = this.state;
+ handleSearchSubmit = (newQuery) => {
+  const { query } = this.state;
 
-    if (newQuery !== query) {
-      this.setState({
-        query: newQuery,
-        page: 1,
-        images: [],
-        visibleCount: 12,
-      });
-    }
-  };
+  if (newQuery !== query) {
+    this.setState({
+      query: newQuery,
+      page: 1,
+      images: [],
+      visibleCount: 12,
+    });
+  }
+};
 
   handleLoadMore = () => {
     this.setState((prevState) => ({
