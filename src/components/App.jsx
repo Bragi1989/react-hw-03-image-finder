@@ -28,6 +28,8 @@ class App extends Component {
     }
   }
 
+  
+
   componentDidUpdate(prevProps, prevState) {
     const { query, page } = this.state;
 
